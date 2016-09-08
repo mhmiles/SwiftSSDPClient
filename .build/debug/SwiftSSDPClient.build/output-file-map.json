@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SwiftSSDPClient.build/master.swiftdeps"
+  },
+  "/Users/miles/Projects/SwiftSSDPClient/Sources/SwiftSSDPClient.swift": {
+    "dependencies": "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SwiftSSDPClient.build/SwiftSSDPClient.d",
+    "object": "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SwiftSSDPClient.build/SwiftSSDPClient.swift.o",
+    "swiftmodule": "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SwiftSSDPClient.build/SwiftSSDPClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SwiftSSDPClient.build/SwiftSSDPClient.swiftdeps"
+  }
+}

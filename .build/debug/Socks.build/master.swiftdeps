@@ -1,0 +1,9 @@
+version: "Apple Swift version 3.0-dev (LLVM 440a472499, Clang e10506ae1c, Swift 395e967875)"
+options: "0c24b79ba8d2437da45400ae52045538"
+build_time: [523042023, 404565000]
+inputs:
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/Socks/Socks.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/Socks/SynchronousTCPServer.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/Socks/SynchronousUDPServer.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/Socks/TCPClient.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/Socks/UDPClient.swift": [523041831, 0]

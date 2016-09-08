@@ -1,0 +1,119 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SynchronousTCPServer"
+provides-nominal:
+- "C5Socks20SynchronousTCPServer"
+provides-member:
+- ["C5Socks20SynchronousTCPServer", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "InternetAddress"
+- "Bool"
+- "Never"
+- !private "FloatLiteralType"
+- !private "TCPInternetSocket"
+- "UInt16"
+- "BooleanLiteralType"
+- "TCPClient"
+- "SynchronousTCPServer"
+- !private "IntegerLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "TCPClient"]
+- !private ["Ps9AnyObject", "TCPInternetSocket"]
+- !private ["Ps9AnyObject", "accept"]
+- !private ["Ps9AnyObject", "address"]
+- !private ["Ps9AnyObject", "bind"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "listen"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["V9SocksCore15InternetAddress", "any"]
+- !private ["V9SocksCore15InternetAddress", "localhost"]
+- !private ["P9SocksCore14InternetSocket", "accept"]
+- !private ["P9SocksCore14InternetSocket", "bind"]
+- !private ["P9SocksCore14InternetSocket", "init"]
+- !private ["P9SocksCore14InternetSocket", "listen"]
+- !private ["P9SocksCore9RawSocket", "accept"]
+- !private ["P9SocksCore9RawSocket", "bind"]
+- !private ["P9SocksCore9RawSocket", "init"]
+- !private ["P9SocksCore9RawSocket", "listen"]
+- !private ["P9SocksCore6Socket", "accept"]
+- !private ["P9SocksCore6Socket", "bind"]
+- !private ["P9SocksCore6Socket", "init"]
+- !private ["P9SocksCore6Socket", "listen"]
+- ["C5Socks20SynchronousTCPServer", "Bool"]
+- ["C5Socks20SynchronousTCPServer", "InternetAddress"]
+- ["C5Socks20SynchronousTCPServer", "Never"]
+- ["C5Socks20SynchronousTCPServer", "TCPClient"]
+- !private ["C5Socks20SynchronousTCPServer", "TCPInternetSocket"]
+- ["C5Socks20SynchronousTCPServer", "UInt16"]
+- ["C5Socks20SynchronousTCPServer", "address"]
+- ["C5Socks20SynchronousTCPServer", "deinit"]
+- ["C5Socks20SynchronousTCPServer", "init"]
+- ["C5Socks20SynchronousTCPServer", "startWithHandler"]
+- !private ["C5Socks9TCPClient", "init"]
+- !private ["C9SocksCore17TCPInternetSocket", "accept"]
+- !private ["C9SocksCore17TCPInternetSocket", "bind"]
+- !private ["C9SocksCore17TCPInternetSocket", "init"]
+- !private ["C9SocksCore17TCPInternetSocket", "listen"]
+- !private ["P9SocksCore17TCPReadableSocket", "accept"]
+- !private ["P9SocksCore17TCPReadableSocket", "bind"]
+- !private ["P9SocksCore17TCPReadableSocket", "init"]
+- !private ["P9SocksCore17TCPReadableSocket", "listen"]
+- !private ["P9SocksCore9TCPSocket", "accept"]
+- !private ["P9SocksCore9TCPSocket", "bind"]
+- !private ["P9SocksCore9TCPSocket", "init"]
+- !private ["P9SocksCore9TCPSocket", "listen"]
+- !private ["P9SocksCore18TCPWriteableSocket", "accept"]
+- !private ["P9SocksCore18TCPWriteableSocket", "bind"]
+- !private ["P9SocksCore18TCPWriteableSocket", "init"]
+- !private ["P9SocksCore18TCPWriteableSocket", "listen"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps8Hashable"
+- !private "V9SocksCore15InternetAddress"
+- !private "P9SocksCore14InternetSocket"
+- !private "P9SocksCore9RawSocket"
+- !private "P9SocksCore6Socket"
+- "C5Socks20SynchronousTCPServer"
+- !private "C5Socks9TCPClient"
+- !private "C9SocksCore17TCPInternetSocket"
+- !private "P9SocksCore17TCPReadableSocket"
+- !private "P9SocksCore9TCPSocket"
+- !private "P9SocksCore18TCPWriteableSocket"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+depends-dynamic-lookup:
+depends-external:
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/Visibility.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/LibcShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/DispatchShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/shims/module.modulemap"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SocksCore.swiftmodule"
+- "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-07-25-a.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+interface-hash: "a1847d5419e773baee21a60ef9d6c86b"

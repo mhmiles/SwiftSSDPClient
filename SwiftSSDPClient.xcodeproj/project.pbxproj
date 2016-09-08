@@ -7,12 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0211145E1D4A900E00FB1C47 /* SwiftSSDPClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FF3FFB1D4A710C00778E59 /* SwiftSSDPClient.framework */; };
+		027535101D4A864F005F5B30 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 0275350F1D4A864F005F5B30 /* Cartfile */; };
+		0294093A1D4A77890006A01C /* SSDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029409391D4A77890006A01C /* SSDPClient.swift */; };
+		02CFAF411D4A90F9003D0BB7 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CFAF401D4A90F9003D0BB7 /* CocoaAsyncSocket.framework */; };
+		02CFAF431D4A9232003D0BB7 /* SSDPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFAF421D4A9232003D0BB7 /* SSDPRequest.swift */; };
+		02CFAF471D4A962D003D0BB7 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CFAF401D4A90F9003D0BB7 /* CocoaAsyncSocket.framework */; };
+		02CFAF491D4B15A6003D0BB7 /* SSDPMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFAF481D4B15A6003D0BB7 /* SSDPMessageParser.swift */; };
+		02F1B25C1D4FCAAF005A36D8 /* SSDPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F1B25B1D4FCAAF005A36D8 /* SSDPResponse.swift */; };
+		02F1B2641D4FFDB8005A36D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F1B2631D4FFDB8005A36D8 /* AppDelegate.swift */; };
+		02F1B2661D4FFDB8005A36D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F1B2651D4FFDB8005A36D8 /* ViewController.swift */; };
+		02F1B2691D4FFDB8005A36D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F1B2671D4FFDB8005A36D8 /* Main.storyboard */; };
+		02F1B26B1D4FFDB8005A36D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F1B26A1D4FFDB8005A36D8 /* Assets.xcassets */; };
+		02F1B26E1D4FFDB8005A36D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F1B26C1D4FFDB8005A36D8 /* LaunchScreen.storyboard */; };
+		02F1B2791D4FFDB8005A36D8 /* Sample_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F1B2781D4FFDB8005A36D8 /* Sample_AppTests.swift */; };
+		02F1B2811D4FFEAC005A36D8 /* SwiftSSDPClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FF3FFB1D4A710C00778E59 /* SwiftSSDPClient.framework */; };
+		02F1B2821D4FFEE2005A36D8 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CFAF401D4A90F9003D0BB7 /* CocoaAsyncSocket.framework */; };
 		02FF3FFF1D4A710C00778E59 /* SwiftSSDPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FF3FFE1D4A710C00778E59 /* SwiftSSDPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02FF40061D4A710C00778E59 /* SwiftSSDPClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FF3FFB1D4A710C00778E59 /* SwiftSSDPClient.framework */; };
 		02FF400B1D4A710C00778E59 /* SwiftSSDPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF400A1D4A710C00778E59 /* SwiftSSDPClientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		02F1B2751D4FFDB8005A36D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02FF3FF21D4A710C00778E59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02F1B2601D4FFDB8005A36D8;
+			remoteInfo = "Sample App";
+		};
 		02FF40071D4A710C00778E59 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 02FF3FF21D4A710C00778E59 /* Project object */;
@@ -23,19 +45,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0275350F1D4A864F005F5B30 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		029409391D4A77890006A01C /* SSDPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDPClient.swift; sourceTree = "<group>"; };
+		02CFAF401D4A90F9003D0BB7 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		02CFAF421D4A9232003D0BB7 /* SSDPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDPRequest.swift; sourceTree = "<group>"; };
+		02CFAF451D4A9620003D0BB7 /* CocoaAsyncSocket.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CocoaAsyncSocket.framework.dSYM; path = Carthage/Build/iOS/CocoaAsyncSocket.framework.dSYM; sourceTree = "<group>"; };
+		02CFAF481D4B15A6003D0BB7 /* SSDPMessageParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDPMessageParser.swift; sourceTree = "<group>"; };
+		02F1B25B1D4FCAAF005A36D8 /* SSDPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDPResponse.swift; sourceTree = "<group>"; };
+		02F1B2611D4FFDB8005A36D8 /* Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F1B2631D4FFDB8005A36D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02F1B2651D4FFDB8005A36D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02F1B2681D4FFDB8005A36D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02F1B26A1D4FFDB8005A36D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02F1B26D1D4FFDB8005A36D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02F1B26F1D4FFDB8005A36D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F1B2741D4FFDB8005A36D8 /* Sample AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F1B2781D4FFDB8005A36D8 /* Sample_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_AppTests.swift; sourceTree = "<group>"; };
+		02F1B27A1D4FFDB8005A36D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02FF3FFB1D4A710C00778E59 /* SwiftSSDPClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSSDPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FF3FFE1D4A710C00778E59 /* SwiftSSDPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftSSDPClient.h; sourceTree = "<group>"; };
 		02FF40001D4A710C00778E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02FF40051D4A710C00778E59 /* SwiftSSDPClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSSDPClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FF400A1D4A710C00778E59 /* SwiftSSDPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSSDPClientTests.swift; sourceTree = "<group>"; };
 		02FF400C1D4A710C00778E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02FF40171D4A71F700778E59 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		02F1B25E1D4FFDB8005A36D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F1B2811D4FFEAC005A36D8 /* SwiftSSDPClient.framework in Frameworks */,
+				02F1B2821D4FFEE2005A36D8 /* CocoaAsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F1B2711D4FFDB8005A36D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02FF3FF71D4A710C00778E59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CFAF411D4A90F9003D0BB7 /* CocoaAsyncSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,19 +100,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02FF40061D4A710C00778E59 /* SwiftSSDPClient.framework in Frameworks */,
+				02CFAF471D4A962D003D0BB7 /* CocoaAsyncSocket.framework in Frameworks */,
+				0211145E1D4A900E00FB1C47 /* SwiftSSDPClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		029409381D4A775A0006A01C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				029409391D4A77890006A01C /* SSDPClient.swift */,
+				02CFAF421D4A9232003D0BB7 /* SSDPRequest.swift */,
+				02F1B25B1D4FCAAF005A36D8 /* SSDPResponse.swift */,
+				02CFAF481D4B15A6003D0BB7 /* SSDPMessageParser.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		02F1B2621D4FFDB8005A36D8 /* Sample App */ = {
+			isa = PBXGroup;
+			children = (
+				02F1B2631D4FFDB8005A36D8 /* AppDelegate.swift */,
+				02F1B2651D4FFDB8005A36D8 /* ViewController.swift */,
+				02F1B2671D4FFDB8005A36D8 /* Main.storyboard */,
+				02F1B26A1D4FFDB8005A36D8 /* Assets.xcassets */,
+				02F1B26C1D4FFDB8005A36D8 /* LaunchScreen.storyboard */,
+				02F1B26F1D4FFDB8005A36D8 /* Info.plist */,
+			);
+			path = "Sample App";
+			sourceTree = "<group>";
+		};
+		02F1B2771D4FFDB8005A36D8 /* Sample AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				02F1B2781D4FFDB8005A36D8 /* Sample_AppTests.swift */,
+				02F1B27A1D4FFDB8005A36D8 /* Info.plist */,
+			);
+			path = "Sample AppTests";
+			sourceTree = "<group>";
+		};
 		02FF3FF11D4A710C00778E59 = {
 			isa = PBXGroup;
 			children = (
-				02FF3FFD1D4A710C00778E59 /* SwiftSSDPClient */,
-				02FF40091D4A710C00778E59 /* SwiftSSDPClientTests */,
+				02CFAF451D4A9620003D0BB7 /* CocoaAsyncSocket.framework.dSYM */,
+				02CFAF401D4A90F9003D0BB7 /* CocoaAsyncSocket.framework */,
+				0275350F1D4A864F005F5B30 /* Cartfile */,
+				02F1B2621D4FFDB8005A36D8 /* Sample App */,
+				02F1B2771D4FFDB8005A36D8 /* Sample AppTests */,
 				02FF3FFC1D4A710C00778E59 /* Products */,
+				029409381D4A775A0006A01C /* Sources */,
+				02FF3FFD1D4A710C00778E59 /* SwiftSSDPClient */,
+				02FF40091D4A710C00778E59 /* Test */,
+				02FF40171D4A71F700778E59 /* Package.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +162,8 @@
 			children = (
 				02FF3FFB1D4A710C00778E59 /* SwiftSSDPClient.framework */,
 				02FF40051D4A710C00778E59 /* SwiftSSDPClientTests.xctest */,
+				02F1B2611D4FFDB8005A36D8 /* Sample App.app */,
+				02F1B2741D4FFDB8005A36D8 /* Sample AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,19 +171,19 @@
 		02FF3FFD1D4A710C00778E59 /* SwiftSSDPClient */ = {
 			isa = PBXGroup;
 			children = (
-				02FF3FFE1D4A710C00778E59 /* SwiftSSDPClient.h */,
 				02FF40001D4A710C00778E59 /* Info.plist */,
+				02FF3FFE1D4A710C00778E59 /* SwiftSSDPClient.h */,
 			);
 			path = SwiftSSDPClient;
 			sourceTree = "<group>";
 		};
-		02FF40091D4A710C00778E59 /* SwiftSSDPClientTests */ = {
+		02FF40091D4A710C00778E59 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				02FF400A1D4A710C00778E59 /* SwiftSSDPClientTests.swift */,
 				02FF400C1D4A710C00778E59 /* Info.plist */,
+				02FF400A1D4A710C00778E59 /* SwiftSSDPClientTests.swift */,
 			);
-			path = SwiftSSDPClientTests;
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +200,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		02F1B2601D4FFDB8005A36D8 /* Sample App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F1B27B1D4FFDB8005A36D8 /* Build configuration list for PBXNativeTarget "Sample App" */;
+			buildPhases = (
+				02F1B25D1D4FFDB8005A36D8 /* Sources */,
+				02F1B25E1D4FFDB8005A36D8 /* Frameworks */,
+				02F1B25F1D4FFDB8005A36D8 /* Resources */,
+				02F1B2831D4FFEF5005A36D8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sample App";
+			productName = "Sample App";
+			productReference = 02F1B2611D4FFDB8005A36D8 /* Sample App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02F1B2731D4FFDB8005A36D8 /* Sample AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F1B27E1D4FFDB8005A36D8 /* Build configuration list for PBXNativeTarget "Sample AppTests" */;
+			buildPhases = (
+				02F1B2701D4FFDB8005A36D8 /* Sources */,
+				02F1B2711D4FFDB8005A36D8 /* Frameworks */,
+				02F1B2721D4FFDB8005A36D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02F1B2761D4FFDB8005A36D8 /* PBXTargetDependency */,
+			);
+			name = "Sample AppTests";
+			productName = "Sample AppTests";
+			productReference = 02F1B2741D4FFDB8005A36D8 /* Sample AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		02FF3FFA1D4A710C00778E59 /* SwiftSSDPClient */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02FF400F1D4A710C00778E59 /* Build configuration list for PBXNativeTarget "SwiftSSDPClient" */;
@@ -125,6 +261,7 @@
 				02FF40011D4A710C00778E59 /* Sources */,
 				02FF40021D4A710C00778E59 /* Frameworks */,
 				02FF40031D4A710C00778E59 /* Resources */,
+				02CFAF441D4A95E4003D0BB7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -143,14 +280,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Miles Hollingsworth";
 				TargetAttributes = {
+					02F1B2601D4FFDB8005A36D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					02F1B2731D4FFDB8005A36D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 02F1B2601D4FFDB8005A36D8;
+					};
 					02FF3FFA1D4A710C00778E59 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					02FF40041D4A710C00778E59 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -160,6 +306,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 02FF3FF11D4A710C00778E59;
 			productRefGroup = 02FF3FFC1D4A710C00778E59 /* Products */;
@@ -168,15 +315,35 @@
 			targets = (
 				02FF3FFA1D4A710C00778E59 /* SwiftSSDPClient */,
 				02FF40041D4A710C00778E59 /* SwiftSSDPClientTests */,
+				02F1B2601D4FFDB8005A36D8 /* Sample App */,
+				02F1B2731D4FFDB8005A36D8 /* Sample AppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		02F1B25F1D4FFDB8005A36D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F1B26E1D4FFDB8005A36D8 /* LaunchScreen.storyboard in Resources */,
+				02F1B26B1D4FFDB8005A36D8 /* Assets.xcassets in Resources */,
+				02F1B2691D4FFDB8005A36D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F1B2721D4FFDB8005A36D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02FF3FF91D4A710C00778E59 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027535101D4A864F005F5B30 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +356,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02CFAF441D4A95E4003D0BB7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		02F1B2831D4FFEF5005A36D8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		02F1B25D1D4FFDB8005A36D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F1B2661D4FFDB8005A36D8 /* ViewController.swift in Sources */,
+				02F1B2641D4FFDB8005A36D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F1B2701D4FFDB8005A36D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F1B2791D4FFDB8005A36D8 /* Sample_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02FF3FF61D4A710C00778E59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0294093A1D4A77890006A01C /* SSDPClient.swift in Sources */,
+				02CFAF431D4A9232003D0BB7 /* SSDPRequest.swift in Sources */,
+				02F1B25C1D4FCAAF005A36D8 /* SSDPResponse.swift in Sources */,
+				02CFAF491D4B15A6003D0BB7 /* SSDPMessageParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +427,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		02F1B2761D4FFDB8005A36D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02F1B2601D4FFDB8005A36D8 /* Sample App */;
+			targetProxy = 02F1B2751D4FFDB8005A36D8 /* PBXContainerItemProxy */;
+		};
 		02FF40081D4A710C00778E59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 02FF3FFA1D4A710C00778E59 /* SwiftSSDPClient */;
@@ -215,7 +439,80 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		02F1B2671D4FFDB8005A36D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02F1B2681D4FFDB8005A36D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02F1B26C1D4FFDB8005A36D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02F1B26D1D4FFDB8005A36D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		02F1B27C1D4FFDB8005A36D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Sample App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hollylabs.Sample-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		02F1B27D1D4FFDB8005A36D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Sample App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hollylabs.Sample-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		02F1B27F1D4FFDB8005A36D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Sample AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hollylabs.Sample-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample App.app/Sample App";
+			};
+			name = Debug;
+		};
+		02F1B2801D4FFDB8005A36D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Sample AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hollylabs.Sample-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample App.app/Sample App";
+			};
+			name = Release;
+		};
 		02FF400D1D4A710C00778E59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -310,58 +607,107 @@
 		02FF40101D4A710C00778E59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftSSDPClient/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hollylabs.SwiftSSDPClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		02FF40111D4A710C00778E59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftSSDPClient/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hollylabs.SwiftSSDPClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		02FF40131D4A710C00778E59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = SwiftSSDPClientTests/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hollylabs.SwiftSSDPClientTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 			};
 			name = Debug;
 		};
 		02FF40141D4A710C00778E59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = SwiftSSDPClientTests/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hollylabs.SwiftSSDPClientTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		02F1B27B1D4FFDB8005A36D8 /* Build configuration list for PBXNativeTarget "Sample App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F1B27C1D4FFDB8005A36D8 /* Debug */,
+				02F1B27D1D4FFDB8005A36D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		02F1B27E1D4FFDB8005A36D8 /* Build configuration list for PBXNativeTarget "Sample AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F1B27F1D4FFDB8005A36D8 /* Debug */,
+				02F1B2801D4FFDB8005A36D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		02FF3FF51D4A710C00778E59 /* Build configuration list for PBXProject "SwiftSSDPClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -378,6 +724,7 @@
 				02FF40111D4A710C00778E59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02FF40121D4A710C00778E59 /* Build configuration list for PBXNativeTarget "SwiftSSDPClientTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +733,7 @@
 				02FF40141D4A710C00778E59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,1140 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_Socks, ______Target_SocksCore, ______Target_SocksCoreExampleTCPClient, ______Target_SocksCoreExampleTCPKeepAliveServer, ______Target_SocksCoreExampleTCPServer, ______Target_SocksExampleTCPClient, ______Target_SocksExampleTCPServer, ______Target_SocksExampleUDPClient, ______Target_SocksExampleUDPServer, ______Target_SocksTestSuite, ______Target_SocksCoreTestSuite);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_,  Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        __PBXFileRef_Socks_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            path = 'Socks.xcodeproj/Socks_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_Socks = {
+            isa = PBXGroup;
+            name = 'Socks';
+            path = 'Sources/Socks';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/Socks/Socks.swift', '__PBXFileRef_Sources/Socks/SynchronousTCPServer.swift', '__PBXFileRef_Sources/Socks/SynchronousUDPServer.swift', '__PBXFileRef_Sources/Socks/TCPClient.swift', '__PBXFileRef_Sources/Socks/UDPClient.swift', __PBXFileRef_Socks_Info.plist);
+        };
+        '__PBXFileRef_Sources/Socks/Socks.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Socks.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Socks/SynchronousTCPServer.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'SynchronousTCPServer.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Socks/SynchronousUDPServer.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'SynchronousUDPServer.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Socks/TCPClient.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'TCPClient.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Socks/UDPClient.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'UDPClient.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_Socks = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_Socks;
+            buildPhases = (CompilePhase_Socks, ___LinkPhase_Socks);
+            buildRules = ();
+            dependencies = (__Dependency_SocksCore);
+            name = 'Socks';
+            productName = Socks;
+            productReference = _____Product_Socks;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_Socks = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = '<RelativePath:"Socks.framework">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_Socks = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/Socks/Socks.swift', '__src_cc_ref_Sources/Socks/SynchronousTCPServer.swift', '__src_cc_ref_Sources/Socks/SynchronousUDPServer.swift', '__src_cc_ref_Sources/Socks/TCPClient.swift', '__src_cc_ref_Sources/Socks/UDPClient.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/Socks/Socks.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Socks/Socks.swift';
+        };
+        '__src_cc_ref_Sources/Socks/SynchronousTCPServer.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Socks/SynchronousTCPServer.swift';
+        };
+        '__src_cc_ref_Sources/Socks/SynchronousUDPServer.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Socks/SynchronousUDPServer.swift';
+        };
+        '__src_cc_ref_Sources/Socks/TCPClient.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Socks/TCPClient.swift';
+        };
+        '__src_cc_ref_Sources/Socks/UDPClient.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Socks/UDPClient.swift';
+        };
+        ___LinkPhase_Socks = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SocksCore_via_Socks);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SocksCore_via_Socks = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SocksCore;
+        };
+        _______Confs_Socks = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_Socks, _ReleaseConf_Socks);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_Socks = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Socks.xcodeproj/Socks_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'Socks'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_Socks = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Socks.xcodeproj/Socks_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'Socks'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_Socks = {
+            isa = PBXTargetDependency;
+            target = ______Target_Socks;
+        };
+        __PBXFileRef_SocksCore_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            path = 'Socks.xcodeproj/SocksCore_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_SocksCore = {
+            isa = PBXGroup;
+            name = 'SocksCore';
+            path = 'Sources/SocksCore';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/SocksCore/Address+C.swift', '__PBXFileRef_Sources/SocksCore/Address.swift', '__PBXFileRef_Sources/SocksCore/Bytes.swift', '__PBXFileRef_Sources/SocksCore/Conversions.swift', '__PBXFileRef_Sources/SocksCore/Error.swift', '__PBXFileRef_Sources/SocksCore/FDSet.swift', '__PBXFileRef_Sources/SocksCore/InternetSocket.swift', '__PBXFileRef_Sources/SocksCore/Pipe.swift', '__PBXFileRef_Sources/SocksCore/Select.swift', '__PBXFileRef_Sources/SocksCore/Socket.swift', '__PBXFileRef_Sources/SocksCore/SocketOptions.swift', '__PBXFileRef_Sources/SocksCore/TCPSocket.swift', '__PBXFileRef_Sources/SocksCore/Types.swift', '__PBXFileRef_Sources/SocksCore/UDPSocket.swift', __PBXFileRef_SocksCore_Info.plist);
+        };
+        '__PBXFileRef_Sources/SocksCore/Address+C.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Address+C.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/Address.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Address.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/Bytes.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Bytes.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/Conversions.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Conversions.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/Error.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Error.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/FDSet.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'FDSet.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/InternetSocket.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'InternetSocket.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/Pipe.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Pipe.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/Select.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Select.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/Socket.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Socket.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/SocketOptions.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'SocketOptions.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/TCPSocket.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'TCPSocket.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/Types.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Types.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SocksCore/UDPSocket.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'UDPSocket.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SocksCore = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SocksCore;
+            buildPhases = (CompilePhase_SocksCore, ___LinkPhase_SocksCore);
+            buildRules = ();
+            dependencies = ();
+            name = 'SocksCore';
+            productName = SocksCore;
+            productReference = _____Product_SocksCore;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_SocksCore = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = '<RelativePath:"SocksCore.framework">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SocksCore = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/SocksCore/Address+C.swift', '__src_cc_ref_Sources/SocksCore/Address.swift', '__src_cc_ref_Sources/SocksCore/Bytes.swift', '__src_cc_ref_Sources/SocksCore/Conversions.swift', '__src_cc_ref_Sources/SocksCore/Error.swift', '__src_cc_ref_Sources/SocksCore/FDSet.swift', '__src_cc_ref_Sources/SocksCore/InternetSocket.swift', '__src_cc_ref_Sources/SocksCore/Pipe.swift', '__src_cc_ref_Sources/SocksCore/Select.swift', '__src_cc_ref_Sources/SocksCore/Socket.swift', '__src_cc_ref_Sources/SocksCore/SocketOptions.swift', '__src_cc_ref_Sources/SocksCore/TCPSocket.swift', '__src_cc_ref_Sources/SocksCore/Types.swift', '__src_cc_ref_Sources/SocksCore/UDPSocket.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/SocksCore/Address+C.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/Address+C.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/Address.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/Address.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/Bytes.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/Bytes.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/Conversions.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/Conversions.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/Error.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/Error.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/FDSet.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/FDSet.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/InternetSocket.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/InternetSocket.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/Pipe.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/Pipe.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/Select.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/Select.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/Socket.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/Socket.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/SocketOptions.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/SocketOptions.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/TCPSocket.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/TCPSocket.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/Types.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/Types.swift';
+        };
+        '__src_cc_ref_Sources/SocksCore/UDPSocket.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCore/UDPSocket.swift';
+        };
+        ___LinkPhase_SocksCore = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_SocksCore = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SocksCore, _ReleaseConf_SocksCore);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SocksCore = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Socks.xcodeproj/SocksCore_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'SocksCore'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_SocksCore = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Socks.xcodeproj/SocksCore_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'SocksCore'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_SocksCore = {
+            isa = PBXTargetDependency;
+            target = ______Target_SocksCore;
+        };
+        _______Group_SocksCoreExampleTCPClient = {
+            isa = PBXGroup;
+            name = 'SocksCoreExampleTCPClient';
+            path = 'Sources/SocksCoreExampleTCPClient';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/SocksCoreExampleTCPClient/main.swift');
+        };
+        '__PBXFileRef_Sources/SocksCoreExampleTCPClient/main.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'main.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SocksCoreExampleTCPClient = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SocksCoreExampleTCPClient;
+            buildPhases = (CompilePhase_SocksCoreExampleTCPClient, ___LinkPhase_SocksCoreExampleTCPClient);
+            buildRules = ();
+            dependencies = (__Dependency_SocksCore);
+            name = 'SocksCoreExampleTCPClient';
+            productName = SocksCoreExampleTCPClient;
+            productReference = _____Product_SocksCoreExampleTCPClient;
+            productType = 'com.apple.product-type.tool';
+        };
+        _____Product_SocksCoreExampleTCPClient = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.executable';
+            path = '<RelativePath:"SocksCoreExampleTCPClient">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SocksCoreExampleTCPClient = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/SocksCoreExampleTCPClient/main.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/SocksCoreExampleTCPClient/main.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCoreExampleTCPClient/main.swift';
+        };
+        ___LinkPhase_SocksCoreExampleTCPClient = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SocksCore_via_SocksCoreExampleTCPClient);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SocksCore_via_SocksCoreExampleTCPClient = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SocksCore;
+        };
+        _______Confs_SocksCoreExampleTCPClient = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SocksCoreExampleTCPClient, _ReleaseConf_SocksCoreExampleTCPClient);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SocksCoreExampleTCPClient = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_SocksCoreExampleTCPClient = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_SocksCoreExampleTCPClient = {
+            isa = PBXTargetDependency;
+            target = ______Target_SocksCoreExampleTCPClient;
+        };
+        _______Group_SocksCoreExampleTCPKeepAliveServer = {
+            isa = PBXGroup;
+            name = 'SocksCoreExampleTCPKeepAliveServer';
+            path = 'Sources/SocksCoreExampleTCPKeepAliveServer';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/SocksCoreExampleTCPKeepAliveServer/main.swift');
+        };
+        '__PBXFileRef_Sources/SocksCoreExampleTCPKeepAliveServer/main.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'main.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SocksCoreExampleTCPKeepAliveServer = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SocksCoreExampleTCPKeepAliveServer;
+            buildPhases = (CompilePhase_SocksCoreExampleTCPKeepAliveServer, ___LinkPhase_SocksCoreExampleTCPKeepAliveServer);
+            buildRules = ();
+            dependencies = (__Dependency_Socks);
+            name = 'SocksCoreExampleTCPKeepAliveServer';
+            productName = SocksCoreExampleTCPKeepAliveServer;
+            productReference = _____Product_SocksCoreExampleTCPKeepAliveServer;
+            productType = 'com.apple.product-type.tool';
+        };
+        _____Product_SocksCoreExampleTCPKeepAliveServer = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.executable';
+            path = '<RelativePath:"SocksCoreExampleTCPKeepAliveServer">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SocksCoreExampleTCPKeepAliveServer = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/SocksCoreExampleTCPKeepAliveServer/main.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/SocksCoreExampleTCPKeepAliveServer/main.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCoreExampleTCPKeepAliveServer/main.swift';
+        };
+        ___LinkPhase_SocksCoreExampleTCPKeepAliveServer = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SocksCore_via_SocksCoreExampleTCPKeepAliveServer, _LinkFileRef_Socks_via_SocksCoreExampleTCPKeepAliveServer);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SocksCore_via_SocksCoreExampleTCPKeepAliveServer = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SocksCore;
+        };
+        _LinkFileRef_Socks_via_SocksCoreExampleTCPKeepAliveServer = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socks;
+        };
+        _______Confs_SocksCoreExampleTCPKeepAliveServer = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SocksCoreExampleTCPKeepAliveServer, _ReleaseConf_SocksCoreExampleTCPKeepAliveServer);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SocksCoreExampleTCPKeepAliveServer = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_SocksCoreExampleTCPKeepAliveServer = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_SocksCoreExampleTCPKeepAliveServer = {
+            isa = PBXTargetDependency;
+            target = ______Target_SocksCoreExampleTCPKeepAliveServer;
+        };
+        _______Group_SocksCoreExampleTCPServer = {
+            isa = PBXGroup;
+            name = 'SocksCoreExampleTCPServer';
+            path = 'Sources/SocksCoreExampleTCPServer';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/SocksCoreExampleTCPServer/main.swift');
+        };
+        '__PBXFileRef_Sources/SocksCoreExampleTCPServer/main.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'main.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SocksCoreExampleTCPServer = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SocksCoreExampleTCPServer;
+            buildPhases = (CompilePhase_SocksCoreExampleTCPServer, ___LinkPhase_SocksCoreExampleTCPServer);
+            buildRules = ();
+            dependencies = (__Dependency_SocksCore);
+            name = 'SocksCoreExampleTCPServer';
+            productName = SocksCoreExampleTCPServer;
+            productReference = _____Product_SocksCoreExampleTCPServer;
+            productType = 'com.apple.product-type.tool';
+        };
+        _____Product_SocksCoreExampleTCPServer = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.executable';
+            path = '<RelativePath:"SocksCoreExampleTCPServer">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SocksCoreExampleTCPServer = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/SocksCoreExampleTCPServer/main.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/SocksCoreExampleTCPServer/main.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksCoreExampleTCPServer/main.swift';
+        };
+        ___LinkPhase_SocksCoreExampleTCPServer = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SocksCore_via_SocksCoreExampleTCPServer);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SocksCore_via_SocksCoreExampleTCPServer = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SocksCore;
+        };
+        _______Confs_SocksCoreExampleTCPServer = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SocksCoreExampleTCPServer, _ReleaseConf_SocksCoreExampleTCPServer);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SocksCoreExampleTCPServer = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_SocksCoreExampleTCPServer = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_SocksCoreExampleTCPServer = {
+            isa = PBXTargetDependency;
+            target = ______Target_SocksCoreExampleTCPServer;
+        };
+        _______Group_SocksExampleTCPClient = {
+            isa = PBXGroup;
+            name = 'SocksExampleTCPClient';
+            path = 'Sources/SocksExampleTCPClient';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/SocksExampleTCPClient/main.swift');
+        };
+        '__PBXFileRef_Sources/SocksExampleTCPClient/main.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'main.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SocksExampleTCPClient = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SocksExampleTCPClient;
+            buildPhases = (CompilePhase_SocksExampleTCPClient, ___LinkPhase_SocksExampleTCPClient);
+            buildRules = ();
+            dependencies = (__Dependency_Socks);
+            name = 'SocksExampleTCPClient';
+            productName = SocksExampleTCPClient;
+            productReference = _____Product_SocksExampleTCPClient;
+            productType = 'com.apple.product-type.tool';
+        };
+        _____Product_SocksExampleTCPClient = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.executable';
+            path = '<RelativePath:"SocksExampleTCPClient">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SocksExampleTCPClient = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/SocksExampleTCPClient/main.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/SocksExampleTCPClient/main.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksExampleTCPClient/main.swift';
+        };
+        ___LinkPhase_SocksExampleTCPClient = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SocksCore_via_SocksExampleTCPClient, _LinkFileRef_Socks_via_SocksExampleTCPClient);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SocksCore_via_SocksExampleTCPClient = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SocksCore;
+        };
+        _LinkFileRef_Socks_via_SocksExampleTCPClient = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socks;
+        };
+        _______Confs_SocksExampleTCPClient = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SocksExampleTCPClient, _ReleaseConf_SocksExampleTCPClient);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SocksExampleTCPClient = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_SocksExampleTCPClient = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_SocksExampleTCPClient = {
+            isa = PBXTargetDependency;
+            target = ______Target_SocksExampleTCPClient;
+        };
+        _______Group_SocksExampleTCPServer = {
+            isa = PBXGroup;
+            name = 'SocksExampleTCPServer';
+            path = 'Sources/SocksExampleTCPServer';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/SocksExampleTCPServer/main.swift');
+        };
+        '__PBXFileRef_Sources/SocksExampleTCPServer/main.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'main.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SocksExampleTCPServer = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SocksExampleTCPServer;
+            buildPhases = (CompilePhase_SocksExampleTCPServer, ___LinkPhase_SocksExampleTCPServer);
+            buildRules = ();
+            dependencies = (__Dependency_Socks);
+            name = 'SocksExampleTCPServer';
+            productName = SocksExampleTCPServer;
+            productReference = _____Product_SocksExampleTCPServer;
+            productType = 'com.apple.product-type.tool';
+        };
+        _____Product_SocksExampleTCPServer = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.executable';
+            path = '<RelativePath:"SocksExampleTCPServer">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SocksExampleTCPServer = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/SocksExampleTCPServer/main.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/SocksExampleTCPServer/main.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksExampleTCPServer/main.swift';
+        };
+        ___LinkPhase_SocksExampleTCPServer = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SocksCore_via_SocksExampleTCPServer, _LinkFileRef_Socks_via_SocksExampleTCPServer);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SocksCore_via_SocksExampleTCPServer = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SocksCore;
+        };
+        _LinkFileRef_Socks_via_SocksExampleTCPServer = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socks;
+        };
+        _______Confs_SocksExampleTCPServer = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SocksExampleTCPServer, _ReleaseConf_SocksExampleTCPServer);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SocksExampleTCPServer = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_SocksExampleTCPServer = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_SocksExampleTCPServer = {
+            isa = PBXTargetDependency;
+            target = ______Target_SocksExampleTCPServer;
+        };
+        _______Group_SocksExampleUDPClient = {
+            isa = PBXGroup;
+            name = 'SocksExampleUDPClient';
+            path = 'Sources/SocksExampleUDPClient';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/SocksExampleUDPClient/main.swift');
+        };
+        '__PBXFileRef_Sources/SocksExampleUDPClient/main.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'main.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SocksExampleUDPClient = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SocksExampleUDPClient;
+            buildPhases = (CompilePhase_SocksExampleUDPClient, ___LinkPhase_SocksExampleUDPClient);
+            buildRules = ();
+            dependencies = (__Dependency_Socks);
+            name = 'SocksExampleUDPClient';
+            productName = SocksExampleUDPClient;
+            productReference = _____Product_SocksExampleUDPClient;
+            productType = 'com.apple.product-type.tool';
+        };
+        _____Product_SocksExampleUDPClient = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.executable';
+            path = '<RelativePath:"SocksExampleUDPClient">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SocksExampleUDPClient = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/SocksExampleUDPClient/main.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/SocksExampleUDPClient/main.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksExampleUDPClient/main.swift';
+        };
+        ___LinkPhase_SocksExampleUDPClient = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SocksCore_via_SocksExampleUDPClient, _LinkFileRef_Socks_via_SocksExampleUDPClient);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SocksCore_via_SocksExampleUDPClient = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SocksCore;
+        };
+        _LinkFileRef_Socks_via_SocksExampleUDPClient = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socks;
+        };
+        _______Confs_SocksExampleUDPClient = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SocksExampleUDPClient, _ReleaseConf_SocksExampleUDPClient);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SocksExampleUDPClient = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_SocksExampleUDPClient = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_SocksExampleUDPClient = {
+            isa = PBXTargetDependency;
+            target = ______Target_SocksExampleUDPClient;
+        };
+        _______Group_SocksExampleUDPServer = {
+            isa = PBXGroup;
+            name = 'SocksExampleUDPServer';
+            path = 'Sources/SocksExampleUDPServer';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/SocksExampleUDPServer/main.swift');
+        };
+        '__PBXFileRef_Sources/SocksExampleUDPServer/main.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'main.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SocksExampleUDPServer = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SocksExampleUDPServer;
+            buildPhases = (CompilePhase_SocksExampleUDPServer, ___LinkPhase_SocksExampleUDPServer);
+            buildRules = ();
+            dependencies = (__Dependency_Socks);
+            name = 'SocksExampleUDPServer';
+            productName = SocksExampleUDPServer;
+            productReference = _____Product_SocksExampleUDPServer;
+            productType = 'com.apple.product-type.tool';
+        };
+        _____Product_SocksExampleUDPServer = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.executable';
+            path = '<RelativePath:"SocksExampleUDPServer">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SocksExampleUDPServer = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/SocksExampleUDPServer/main.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/SocksExampleUDPServer/main.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SocksExampleUDPServer/main.swift';
+        };
+        ___LinkPhase_SocksExampleUDPServer = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SocksCore_via_SocksExampleUDPServer, _LinkFileRef_Socks_via_SocksExampleUDPServer);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SocksCore_via_SocksExampleUDPServer = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SocksCore;
+        };
+        _LinkFileRef_Socks_via_SocksExampleUDPServer = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socks;
+        };
+        _______Confs_SocksExampleUDPServer = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SocksExampleUDPServer, _ReleaseConf_SocksExampleUDPServer);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SocksExampleUDPServer = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_SocksExampleUDPServer = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_SocksExampleUDPServer = {
+            isa = PBXTargetDependency;
+            target = ______Target_SocksExampleUDPServer;
+        };
+        __PBXFileRef_SocksTestSuite_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            path = 'Socks.xcodeproj/SocksTestSuite_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_SocksTestSuite = {
+            isa = PBXGroup;
+            name = 'SocksTestSuite';
+            path = 'Tests/Socks';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/Socks/LiveTests.swift', '__PBXFileRef_Tests/Socks/XCTestManifests.swift', __PBXFileRef_SocksTestSuite_Info.plist);
+        };
+        '__PBXFileRef_Tests/Socks/LiveTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'LiveTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/Socks/XCTestManifests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'XCTestManifests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SocksTestSuite = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SocksTestSuite;
+            buildPhases = (CompilePhase_SocksTestSuite, ___LinkPhase_SocksTestSuite);
+            buildRules = ();
+            dependencies = (__Dependency_Socks);
+            name = 'SocksTestSuite';
+            productName = SocksTestSuite;
+            productReference = _____Product_SocksTestSuite;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_SocksTestSuite = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = '<RelativePath:"SocksTestSuite.xctest">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SocksTestSuite = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/Socks/LiveTests.swift', '__src_cc_ref_Tests/Socks/XCTestManifests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/Socks/LiveTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/Socks/LiveTests.swift';
+        };
+        '__src_cc_ref_Tests/Socks/XCTestManifests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/Socks/XCTestManifests.swift';
+        };
+        ___LinkPhase_SocksTestSuite = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SocksCore_via_SocksTestSuite, _LinkFileRef_Socks_via_SocksTestSuite);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SocksCore_via_SocksTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SocksCore;
+        };
+        _LinkFileRef_Socks_via_SocksTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socks;
+        };
+        _______Confs_SocksTestSuite = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SocksTestSuite, _ReleaseConf_SocksTestSuite);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SocksTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Socks.xcodeproj/SocksTestSuite_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_SocksTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Socks.xcodeproj/SocksTestSuite_Info.plist'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_SocksTestSuite = {
+            isa = PBXTargetDependency;
+            target = ______Target_SocksTestSuite;
+        };
+        __PBXFileRef_SocksCoreTestSuite_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            path = 'Socks.xcodeproj/SocksCoreTestSuite_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_SocksCoreTestSuite = {
+            isa = PBXGroup;
+            name = 'SocksCoreTestSuite';
+            path = 'Tests/SocksCore';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/SocksCore/AddressResolutionTests.swift', '__PBXFileRef_Tests/SocksCore/ConversionTests.swift', '__PBXFileRef_Tests/SocksCore/ErrorCodesTests.swift', '__PBXFileRef_Tests/SocksCore/LiveTests.swift', '__PBXFileRef_Tests/SocksCore/PipeTests.swift', '__PBXFileRef_Tests/SocksCore/SelectTests.swift', '__PBXFileRef_Tests/SocksCore/Strand.swift', '__PBXFileRef_Tests/SocksCore/TimeoutTests.swift', '__PBXFileRef_Tests/SocksCore/XCTestManifests.swift', __PBXFileRef_SocksCoreTestSuite_Info.plist);
+        };
+        '__PBXFileRef_Tests/SocksCore/AddressResolutionTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'AddressResolutionTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SocksCore/ConversionTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'ConversionTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SocksCore/ErrorCodesTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'ErrorCodesTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SocksCore/LiveTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'LiveTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SocksCore/PipeTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'PipeTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SocksCore/SelectTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'SelectTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SocksCore/Strand.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Strand.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SocksCore/TimeoutTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'TimeoutTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SocksCore/XCTestManifests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'XCTestManifests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SocksCoreTestSuite = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SocksCoreTestSuite;
+            buildPhases = (CompilePhase_SocksCoreTestSuite, ___LinkPhase_SocksCoreTestSuite);
+            buildRules = ();
+            dependencies = (__Dependency_SocksCore);
+            name = 'SocksCoreTestSuite';
+            productName = SocksCoreTestSuite;
+            productReference = _____Product_SocksCoreTestSuite;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_SocksCoreTestSuite = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = '<RelativePath:"SocksCoreTestSuite.xctest">';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SocksCoreTestSuite = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/SocksCore/AddressResolutionTests.swift', '__src_cc_ref_Tests/SocksCore/ConversionTests.swift', '__src_cc_ref_Tests/SocksCore/ErrorCodesTests.swift', '__src_cc_ref_Tests/SocksCore/LiveTests.swift', '__src_cc_ref_Tests/SocksCore/PipeTests.swift', '__src_cc_ref_Tests/SocksCore/SelectTests.swift', '__src_cc_ref_Tests/SocksCore/Strand.swift', '__src_cc_ref_Tests/SocksCore/TimeoutTests.swift', '__src_cc_ref_Tests/SocksCore/XCTestManifests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/SocksCore/AddressResolutionTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SocksCore/AddressResolutionTests.swift';
+        };
+        '__src_cc_ref_Tests/SocksCore/ConversionTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SocksCore/ConversionTests.swift';
+        };
+        '__src_cc_ref_Tests/SocksCore/ErrorCodesTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SocksCore/ErrorCodesTests.swift';
+        };
+        '__src_cc_ref_Tests/SocksCore/LiveTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SocksCore/LiveTests.swift';
+        };
+        '__src_cc_ref_Tests/SocksCore/PipeTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SocksCore/PipeTests.swift';
+        };
+        '__src_cc_ref_Tests/SocksCore/SelectTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SocksCore/SelectTests.swift';
+        };
+        '__src_cc_ref_Tests/SocksCore/Strand.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SocksCore/Strand.swift';
+        };
+        '__src_cc_ref_Tests/SocksCore/TimeoutTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SocksCore/TimeoutTests.swift';
+        };
+        '__src_cc_ref_Tests/SocksCore/XCTestManifests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SocksCore/XCTestManifests.swift';
+        };
+        ___LinkPhase_SocksCoreTestSuite = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SocksCore_via_SocksCoreTestSuite);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SocksCore_via_SocksCoreTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SocksCore;
+        };
+        _______Confs_SocksCoreTestSuite = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SocksCoreTestSuite, _ReleaseConf_SocksCoreTestSuite);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SocksCoreTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Socks.xcodeproj/SocksCoreTestSuite_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_SocksCoreTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Socks.xcodeproj/SocksCoreTestSuite_Info.plist'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_SocksCoreTestSuite = {
+            isa = PBXTargetDependency;
+            target = ______Target_SocksCoreTestSuite;
+        };
+        '__PBXFileRef_Socks.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'Socks.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Socks.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_Socks, _______Group_SocksCore, _______Group_SocksCoreExampleTCPClient, _______Group_SocksCoreExampleTCPKeepAliveServer, _______Group_SocksCoreExampleTCPServer, _______Group_SocksExampleTCPClient, _______Group_SocksExampleTCPServer, _______Group_SocksExampleUDPClient, _______Group_SocksExampleUDPServer);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_SocksTestSuite, _______Group_SocksCoreTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_SocksTestSuite, _____Product_SocksCoreTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_Socks, _____Product_SocksCore, _____Product_SocksCoreExampleTCPClient, _____Product_SocksCoreExampleTCPKeepAliveServer, _____Product_SocksCoreExampleTCPServer, _____Product_SocksExampleTCPClient, _____Product_SocksExampleTCPServer, _____Product_SocksExampleUDPClient, _____Product_SocksExampleUDPServer);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_Socks.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_Socks.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}

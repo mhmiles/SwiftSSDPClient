@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SocksCoreExampleTCPClient.build/master.swiftdeps"
+  },
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCoreExampleTCPClient/main.swift": {
+    "dependencies": "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SocksCoreExampleTCPClient.build/main.d",
+    "object": "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SocksCoreExampleTCPClient.build/main.swift.o",
+    "swiftmodule": "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SocksCoreExampleTCPClient.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/miles/Projects/SwiftSSDPClient/.build/debug/SocksCoreExampleTCPClient.build/main.swiftdeps"
+  }
+}

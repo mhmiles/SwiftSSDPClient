@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0-dev (LLVM 440a472499, Clang e10506ae1c, Swift 395e967875)"
+options: "1389860ec20f8c1e3320313cda19bc35"
+build_time: [523042023, 594151000]
+inputs:
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksExampleUDPServer/main.swift": [523041831, 0]

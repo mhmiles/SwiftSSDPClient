@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0-dev (LLVM 440a472499, Clang e10506ae1c, Swift 395e967875)"
+options: "b0f79aa6e7f7e4b88a1200f39a2c0c27"
+build_time: [523042023, 597013000]
+inputs:
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksExampleTCPClient/main.swift": [523041831, 0]

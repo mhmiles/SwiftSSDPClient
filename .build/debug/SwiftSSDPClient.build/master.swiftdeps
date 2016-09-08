@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0-dev (LLVM 440a472499, Clang e10506ae1c, Swift 395e967875)"
+options: "71f3dfbcea098f17d8c46a02c86cf24b"
+build_time: [523042993, 957488000]
+inputs:
+  "/Users/miles/Projects/SwiftSSDPClient/Sources/SwiftSSDPClient.swift": [523042038, 0]

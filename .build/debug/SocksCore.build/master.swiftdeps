@@ -1,0 +1,18 @@
+version: "Apple Swift version 3.0-dev (LLVM 440a472499, Clang e10506ae1c, Swift 395e967875)"
+options: "00ab78ff96cdf692e80cd539e05834d0"
+build_time: [523042021, 624663000]
+inputs:
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/Address+C.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/Address.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/Bytes.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/Conversions.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/Error.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/FDSet.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/InternetSocket.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/Pipe.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/Select.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/Socket.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/SocketOptions.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/TCPSocket.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/Types.swift": [523041831, 0]
+  "/Users/miles/Projects/SwiftSSDPClient/Packages/Socks-0.10.0/Sources/SocksCore/UDPSocket.swift": [523041831, 0]
