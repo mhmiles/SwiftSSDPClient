@@ -47,12 +47,12 @@ class SwiftSSDPClientTests: XCTestCase {
 
 extension SwiftSSDPClientTests: SSDPClientDelegate {
     func received(request: SSDPRequest) {
-        expectation?.fulfill()
         print(request)
     }
     
     func received(response: SSDPResponse) {
         expectation?.fulfill()
+        expectation = nil
         print(response)
     }
 }
