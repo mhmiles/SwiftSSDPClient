@@ -31,7 +31,7 @@ public class SSDPResponse {
 }
 
 extension SSDPResponse: SSDPMessage {
-    var searchTarget: String? {
+    public var searchTarget: String? {
         return responseDictionary["ST"]
     }
 }
