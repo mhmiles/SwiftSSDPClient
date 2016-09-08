@@ -69,6 +69,6 @@ class SSDPMessageParser {
     }
 }
 
-protocol SSDPMessage {
+public protocol SSDPMessage {
     var searchTarget: String? { get }
 }

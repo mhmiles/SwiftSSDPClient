@@ -48,7 +48,7 @@ public class SSDPRequest {
 }
 
 extension SSDPRequest: SSDPMessage {
-    var searchTarget: String? {
+    public var searchTarget: String? {
         return requestDictionary["ST"]
     }
 }
