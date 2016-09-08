@@ -8,10 +8,10 @@
 
 import Foundation
 
-typealias SSDPResponseDictionary = [String: String]
+public typealias SSDPResponseDictionary = [String: String]
 
 public class SSDPResponse {
-    private let responseDictionary: [String: String]
+    public let responseDictionary: SSDPResponseDictionary
     
     var data: NSData {
         return responseString.dataUsingEncoding(NSUTF8StringEncoding)!
