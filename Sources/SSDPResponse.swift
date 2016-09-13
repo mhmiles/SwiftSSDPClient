@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias SSDPResponseDictionary = [String: String]
+public typealias SSDPResponseDictionary = [String: String]
 
 open class SSDPResponse {
     fileprivate let responseDictionary: [String: String]
@@ -29,7 +29,7 @@ open class SSDPResponse {
 }
 
 extension SSDPResponse: SSDPMessage {
-    var searchTarget: String? {
+    public var searchTarget: String? {
         return responseDictionary["ST"]
     }
 }
