@@ -18,11 +18,9 @@ open class SSDPResponse {
     }
     
     fileprivate var responseString: String {
-        let responseString = responseDictionary.reduce("HTTP/1.1 200 OK\r\n") { (accumulator, parameter) -> String in
-            return accumulator + "\(parameter.0): \(parameter.1)\r\n"
-        }
-        
-        return responseString+"\r\n"
+        return responseDictionary.reduce("HTTP/1.1 200 OK\r\n", {
+            return $0 + "\($1.0): \($1.1)\r\n"
+        })+"\r\n"
     }
     
     init(dictionary: SSDPResponseDictionary) {

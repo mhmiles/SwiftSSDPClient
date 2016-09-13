@@ -32,11 +32,13 @@ open class SSDPRequest {
     }
     
     convenience init(searchTarget: String) {
-        let dictionary: SSDPRequestDictionary = ["HOST": "239.255.255.250:1900",
-                "MAN": "\"ssdp:discover\"",
-                "MX": "3",
-                "ST": searchTarget,
-                "USER-AGENT": "iOS/9.3"]
+        let dictionary = [
+            "HOST": "239.255.255.250:1900",
+            "MAN": "\"ssdp:discover\"",
+            "MX": "3",
+            "ST": searchTarget,
+            "USER-AGENT": "iOS/9.3"
+        ]
         
         self.init(method: .Search, dictionary: dictionary)
     }
