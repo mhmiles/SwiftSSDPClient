@@ -56,7 +56,7 @@ open class SSDPClient {
 }
 
 extension SSDPClient: GCDAsyncUdpSocketDelegate {
-    @objc public func udpSocket(_ sock: GCDAsyncUdpSocket, didReceive data: Data, fromAddress address: Data, withFilterContext filterContext: AnyObject?) {
+    public func udpSocket(_ sock: GCDAsyncUdpSocket, didReceive data: Data, fromAddress address: Data, withFilterContext filterContext: Any?) {
         guard let messageString = String(data: data as Data, encoding: String.Encoding.utf8) else {
             return
         }

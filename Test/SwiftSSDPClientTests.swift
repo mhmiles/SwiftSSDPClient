@@ -21,8 +21,7 @@ class SwiftSSDPClientTests: XCTestCase {
     
     override func tearDown() {
         client.stopDiscovery()
-        expectation = nil
-
+        
         super.tearDown()
     }
     
@@ -48,11 +47,11 @@ class SwiftSSDPClientTests: XCTestCase {
 extension SwiftSSDPClientTests: SSDPClientDelegate {
     func received(_ request: SSDPRequest) {
         expectation?.fulfill()
-        print(request)
+        expectation = nil
     }
     
     func received(_ response: SSDPResponse) {
         expectation?.fulfill()
-        print(response)
+        expectation = nil
     }
 }
