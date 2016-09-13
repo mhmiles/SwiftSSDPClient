@@ -11,7 +11,7 @@ import Foundation
 public typealias SSDPResponseDictionary = [String: String]
 
 open class SSDPResponse {
-    fileprivate let responseDictionary: [String: String]
+    public let responseDictionary: [String: String]
     
     var data: Data {
         return responseString.data(using: String.Encoding.utf8)!
