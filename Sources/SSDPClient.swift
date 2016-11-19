@@ -11,7 +11,7 @@ import CocoaAsyncSocket
 
 private let broadcastAddress = "239.255.255.250"
 
-open class SSDPClient {
+open class SSDPClient: NSObject {
     open weak var delegate: SSDPClientDelegate?
     
     fileprivate lazy var socket: GCDAsyncUdpSocket = { () -> GCDAsyncUdpSocket in
