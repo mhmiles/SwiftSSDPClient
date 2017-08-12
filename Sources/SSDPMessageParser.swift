@@ -38,7 +38,7 @@ class SSDPMessageParser {
                     valueBuffer = self.scanLine()
                 }
                 
-                if let keyBuffer = keyBuffer as? String, let valueBuffer = valueBuffer {
+                if let keyBuffer = keyBuffer as String?, let valueBuffer = valueBuffer {
                     messageDictionary[keyBuffer] = valueBuffer
                 }
             }
@@ -63,7 +63,7 @@ class SSDPMessageParser {
         var buffer: NSString? = nil
         scanner.scanUpToCharacters(from: CharacterSet.newlines, into: &buffer)
         
-        return (buffer as? String)
+        return (buffer as String?)
     }
     
     fileprivate func advancePastColon() {
