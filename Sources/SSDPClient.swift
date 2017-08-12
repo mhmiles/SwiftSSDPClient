@@ -9,11 +9,11 @@
 import Foundation
 import CocoaAsyncSocket
 
-public class SSDPClient {
+public class SSDPClient: NSObject {
     public weak var delegate: SSDPClientDelegate?
     
     private lazy var socket: GCDAsyncUdpSocket = { () -> GCDAsyncUdpSocket in
-        let socket = GCDAsyncUdpSocket(delegate: self, delegateQueue: dispatch_get_main_queue())
+        let socket = GCDAsyncUdpSocket(delegate: self, delegateQueue: DispatchQueue.main)
         try! socket.enableBroadcast(true)
         
         return socket
@@ -26,21 +26,21 @@ public class SSDPClient {
     public func discoverAllDevices() {
         let message = SSDPRequest(searchTarget: "ssdp:all")
 
-        socket.sendData(message.data, toHost: "239.255.255.250", port: 1900, withTimeout: -1, tag: 0)
+      socket.send(message.data as Data as Data, toHost: "239.255.255.250", port: 1900, withTimeout: -1, tag: 0)
         try! socket.beginReceiving()
     }
     
     public func discoverRootDevices() {
         let message = SSDPRequest(searchTarget: "upnp:rootdevice")
         
-        socket.sendData(message.data, toHost: "239.255.255.250", port: 1900, withTimeout: -1, tag: 0)
+      socket.send(message.data as Data, toHost: "239.255.255.250", port: 1900, withTimeout: -1, tag: 0)
         try! socket.beginReceiving()
     }
     
     public func discover(searchTarget: String) {
         let message = SSDPRequest(searchTarget: searchTarget)
         
-        socket.sendData(message.data, toHost: "239.255.255.250", port: 1900, withTimeout: -1, tag: 0)
+      socket.send(message.data as Data, toHost: "239.255.255.250", port: 1900, withTimeout: -1, tag: 0)
         try! socket.beginReceiving()
     }
     
@@ -54,8 +54,8 @@ public class SSDPClient {
 }
 
 extension SSDPClient: GCDAsyncUdpSocketDelegate {
-    @objc public func udpSocket(sock: GCDAsyncUdpSocket, didReceiveData data: NSData, fromAddress address: NSData, withFilterContext filterContext: AnyObject?) {
-        guard let messageString = String(data: data, encoding: NSUTF8StringEncoding) else {
+  @objc public func udpSocket(_ sock: GCDAsyncUdpSocket, didReceive data: Data, fromAddress address: Data, withFilterContext filterContext: Any?) {
+    guard let messageString = String(data: data as Data, encoding: String.Encoding.utf8) else {
             return
         }
         
@@ -75,6 +75,6 @@ extension SSDPClient: GCDAsyncUdpSocketDelegate {
 }
 
 public protocol SSDPClientDelegate: class {
-    func received(request: SSDPRequest)
-    func received(response: SSDPResponse)
+    func received(_ request: SSDPRequest)
+    func received(_ response: SSDPResponse)
 }

@@ -13,11 +13,11 @@ public typealias SSDPResponseDictionary = [String: String]
 public class SSDPResponse {
     public let responseDictionary: SSDPResponseDictionary
     
-    var data: NSData {
-        return responseString.dataUsingEncoding(NSUTF8StringEncoding)!
+    var data: Data {
+      return responseString.data(using: String.Encoding.utf8)!
     }
     
-    private var responseString: String {
+    fileprivate var responseString: String {
         let responseString = responseDictionary.reduce("HTTP/1.1 200 OK\r\n") { (accumulator, parameter) -> String in
             return accumulator + "\(parameter.0): \(parameter.1)\r\n"
         }

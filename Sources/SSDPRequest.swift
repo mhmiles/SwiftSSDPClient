@@ -17,13 +17,13 @@ enum SSDPRequestMethod: String {
 
 public class SSDPRequest {
     let method: SSDPRequestMethod
-    private let requestDictionary: [String: String]
+    fileprivate let requestDictionary: [String: String]
     
     var data: NSData {
-        return requestString.dataUsingEncoding(NSUTF8StringEncoding)!
+      return requestString.data(using: String.Encoding.utf8)! as NSData
     }
     
-    private var requestString: String {
+    fileprivate var requestString: String {
         let requestString = requestDictionary.reduce("\(method.rawValue) * HTTP/1.1\r\n") { (accumulator, parameter) -> String in
             return accumulator + "\(parameter.0): \(parameter.1)\r\n"
         }
