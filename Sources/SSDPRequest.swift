@@ -15,15 +15,15 @@ enum SSDPRequestMethod: String {
     case Search = "M-SEARCH"
 }
 
-public class SSDPRequest {
+open class SSDPRequest {
     let method: SSDPRequestMethod
-    private let requestDictionary: [String: String]
+    fileprivate let requestDictionary: [String: String]
     
-    var data: NSData {
-        return requestString.dataUsingEncoding(NSUTF8StringEncoding)!
+    var data: Data {
+        return requestString.data(using: String.Encoding.utf8)!
     }
     
-    private var requestString: String {
+    fileprivate var requestString: String {
         let requestString = requestDictionary.reduce("\(method.rawValue) * HTTP/1.1\r\n") { (accumulator, parameter) -> String in
             return accumulator + "\(parameter.0): \(parameter.1)\r\n"
         }
@@ -32,11 +32,13 @@ public class SSDPRequest {
     }
     
     convenience init(searchTarget: String) {
-        let dictionary: SSDPRequestDictionary = ["HOST": "239.255.255.250:1900",
-                "MAN": "\"ssdp:discover\"",
-                "MX": "3",
-                "ST": searchTarget,
-                "USER-AGENT": "iOS/9.3"]
+        let dictionary = [
+            "HOST": "239.255.255.250:1900",
+            "MAN": "\"ssdp:discover\"",
+            "MX": "3",
+            "ST": searchTarget,
+            "USER-AGENT": "iOS/9.3"
+        ]
         
         self.init(method: .Search, dictionary: dictionary)
     }

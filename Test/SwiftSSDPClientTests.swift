@@ -21,16 +21,15 @@ class SwiftSSDPClientTests: XCTestCase {
     
     override func tearDown() {
         client.stopDiscovery()
-        expectation = nil
-
+        
         super.tearDown()
     }
     
     func testDiscoverAll() {
         client.discoverAllDevices()
         
-        expectation = expectationWithDescription("Discover All")
-        waitForExpectationsWithTimeout(10.0) { (error) in
+        expectation = expectation(description: "Discover All")
+        waitForExpectations(timeout: 10.0) { (error) in
             print(error)
         }
     }
@@ -38,21 +37,21 @@ class SwiftSSDPClientTests: XCTestCase {
     func testDiscoverRootDevice() {
         client.discoverRootDevices()
         
-        expectation = expectationWithDescription("Discover Root Devices")
-        waitForExpectationsWithTimeout(10.0) { (error) in
+        expectation = expectation(description: "Discover Root Devices")
+        waitForExpectations(timeout: 10.0) { (error) in
             print(error)
         }
     }
 }
 
 extension SwiftSSDPClientTests: SSDPClientDelegate {
-    func received(request: SSDPRequest) {
-        print(request)
-    }
-    
-    func received(response: SSDPResponse) {
+    func received(_ request: SSDPRequest) {
         expectation?.fulfill()
         expectation = nil
-        print(response)
+    }
+    
+    func received(_ response: SSDPResponse) {
+        expectation?.fulfill()
+        expectation = nil
     }
 }

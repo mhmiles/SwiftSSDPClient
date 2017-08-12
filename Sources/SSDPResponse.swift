@@ -10,21 +10,19 @@ import Foundation
 
 public typealias SSDPResponseDictionary = [String: String]
 
-public class SSDPResponse {
-    public let responseDictionary: SSDPResponseDictionary
-    
-    var data: NSData {
-        return responseString.dataUsingEncoding(NSUTF8StringEncoding)!
+open class SSDPResponse {
+    public let responseDictionary: [String: String]
+
+    var data: Data {
+        return responseString.data(using: String.Encoding.utf8)!
     }
-    
-    private var responseString: String {
-        let responseString = responseDictionary.reduce("HTTP/1.1 200 OK\r\n") { (accumulator, parameter) -> String in
-            return accumulator + "\(parameter.0): \(parameter.1)\r\n"
-        }
-        
-        return responseString+"\r\n"
+
+    fileprivate var responseString: String {
+        return responseDictionary.reduce("HTTP/1.1 200 OK\r\n", {
+            return $0 + "\($1.0): \($1.1)\r\n"
+        })+"\r\n"
     }
-    
+
     init(dictionary: SSDPResponseDictionary) {
         self.responseDictionary = dictionary
     }
