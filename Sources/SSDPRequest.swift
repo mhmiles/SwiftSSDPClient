@@ -15,12 +15,12 @@ enum SSDPRequestMethod: String {
     case Search = "M-SEARCH"
 }
 
-public class SSDPRequest {
+open class SSDPRequest {
     let method: SSDPRequestMethod
     fileprivate let requestDictionary: [String: String]
-    
-    var data: NSData {
-      return requestString.data(using: String.Encoding.utf8)! as NSData
+  
+    var data: Data {
+        return requestString.data(using: String.Encoding.utf8)!
     }
     
     fileprivate var requestString: String {
@@ -32,11 +32,13 @@ public class SSDPRequest {
     }
     
     convenience init(searchTarget: String) {
-        let dictionary: SSDPRequestDictionary = ["HOST": "239.255.255.250:1900",
-                "MAN": "\"ssdp:discover\"",
-                "MX": "3",
-                "ST": searchTarget,
-                "USER-AGENT": "iOS/9.3"]
+        let dictionary = [
+            "HOST": "239.255.255.250:1900",
+            "MAN": "\"ssdp:discover\"",
+            "MX": "3",
+            "ST": searchTarget,
+            "USER-AGENT": "iOS/9.3"
+        ]
         
         self.init(method: .Search, dictionary: dictionary)
     }

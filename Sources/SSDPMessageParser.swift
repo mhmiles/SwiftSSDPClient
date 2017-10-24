@@ -9,69 +9,68 @@
 import Foundation
 
 class SSDPMessageParser {
-    private let scanner: Scanner
-    
+    fileprivate let scanner: Scanner
+
     init(message: String) {
         scanner = Scanner(string: message)
-      scanner.charactersToBeSkipped = CharacterSet.newlines
+        scanner.charactersToBeSkipped = CharacterSet.newlines
     }
-    
+
     func parse() -> SSDPMessage? {
-        guard let firstLine = scanLine(),
-          let firstWord = firstLine.components(separatedBy: " ").first else {
+        guard let firstLine = scanLine(), let firstWord = firstLine.components(separatedBy: " ").first else {
             return nil
         }
-        
+
         var keyBuffer: NSString? = nil
-        var valueBuffer: NSString? = nil
-        
+        var valueBuffer: String? = nil
+
         var messageDictionary = SSDPRequestDictionary()
-      let parseDictionary = { (scanner: Scanner) in
-          while self.scanner.scanUpTo(":", into: &keyBuffer) {
+        let parseDictionary = {
+            while self.scanner.scanUpTo(":", into: &keyBuffer) {
                 self.advancePastColon()
-      
-            guard scanner.scanLocation < scanner.string.characters.count,
-              let currentCharacter = scanner.string[scanner.string.index(scanner.string.startIndex, offsetBy: scanner.scanLocation)].unicodeScalars.first else {
-              return
-            }
-            
-            if CharacterSet.newlines.contains(currentCharacter) {
+
+                let unicodeScalars = self.scanner.string.unicodeScalars
+                let index = unicodeScalars.index(unicodeScalars.startIndex, offsetBy: self.scanner.scanLocation)
+
+                if CharacterSet.newlines.contains(unicodeScalars[index]) {
                     valueBuffer = ""
                 } else {
               valueBuffer = self.scanLine() as NSString?
                 }
-                
-            messageDictionary[(keyBuffer! as String)] = (valueBuffer!  as String)
+
+                if let keyBuffer = keyBuffer as String?, let valueBuffer = valueBuffer {
+                    messageDictionary[keyBuffer] = valueBuffer
+                }
             }
         }
-        
+
         if let method = SSDPRequestMethod(rawValue: firstWord) {
             parseDictionary(scanner)
-            
+
             return SSDPRequest(method: method, dictionary: messageDictionary)
         } else if firstWord == "HTTP/1.1" {
             parseDictionary(scanner)
-            
+
             return SSDPResponse(dictionary: messageDictionary)
         } else {
             print("INVALID SSDP MESSAGE")
         }
-        
+
         return nil
     }
-    
-    private func scanLine() -> String? {
+
+    fileprivate func scanLine() -> String? {
         var buffer: NSString? = nil
-      scanner.scanUpToCharacters(from: CharacterSet.newlines, into: &buffer)
-        
-      return (buffer as String?)
+        scanner.scanUpToCharacters(from: CharacterSet.newlines, into: &buffer)
+
+        return (buffer as String?)
     }
-    
-    private func advancePastColon() {
+
+    fileprivate func advancePastColon() {
         var string: NSString? = nil
-      
+
         let characterSet = CharacterSet(charactersIn: ": ")
-      scanner.scanCharacters(from: characterSet, into: &string)
+        scanner.scanCharacters(from: characterSet, into: &string)
     }
 }
 

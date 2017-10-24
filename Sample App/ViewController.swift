@@ -28,11 +28,11 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: SSDPClientDelegate {
-    func received(response: SSDPResponse) {
+    func received(_ response: SSDPResponse) {
         textView.text = (textView.text ?? "") + response.description
     }
     
-    func received(request: SSDPRequest) {
+    func received(_ request: SSDPRequest) {
         textView.text = (textView.text ?? "") + request.description
     }
 }

@@ -51,8 +51,6 @@
 		02F1B26A1D4FFDB8005A36D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02F1B26D1D4FFDB8005A36D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02F1B26F1D4FFDB8005A36D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02F1B2781D4FFDB8005A36D8 /* Sample_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_AppTests.swift; sourceTree = "<group>"; };
-		02F1B27A1D4FFDB8005A36D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02FF3FFB1D4A710C00778E59 /* SwiftSSDPClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSSDPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FF3FFE1D4A710C00778E59 /* SwiftSSDPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftSSDPClient.h; sourceTree = "<group>"; };
 		02FF40001D4A710C00778E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,15 +114,6 @@
 			path = "Sample App";
 			sourceTree = "<group>";
 		};
-		02F1B2771D4FFDB8005A36D8 /* Sample AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				02F1B2781D4FFDB8005A36D8 /* Sample_AppTests.swift */,
-				02F1B27A1D4FFDB8005A36D8 /* Info.plist */,
-			);
-			path = "Sample AppTests";
-			sourceTree = "<group>";
-		};
 		02FF3FF11D4A710C00778E59 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +121,6 @@
 				02CFAF401D4A90F9003D0BB7 /* CocoaAsyncSocket.framework */,
 				0275350F1D4A864F005F5B30 /* Cartfile */,
 				02F1B2621D4FFDB8005A36D8 /* Sample App */,
-				02F1B2771D4FFDB8005A36D8 /* Sample AppTests */,
 				02FF3FFC1D4A710C00778E59 /* Products */,
 				029409381D4A775A0006A01C /* Sources */,
 				02FF3FFD1D4A710C00778E59 /* SwiftSSDPClient */,
@@ -245,11 +233,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Miles Hollingsworth";
 				TargetAttributes = {
 					02F1B2601D4FFDB8005A36D8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					02FF3FFA1D4A710C00778E59 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -411,6 +400,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hollylabs.Sample-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -426,6 +416,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hollylabs.Sample-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -450,8 +441,6 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -507,8 +496,6 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
