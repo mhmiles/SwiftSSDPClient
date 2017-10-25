@@ -15,7 +15,7 @@ open class SSDPClient: NSObject {
     open weak var delegate: SSDPClientDelegate?
 
     fileprivate lazy var socket: GCDAsyncUdpSocket = { () -> GCDAsyncUdpSocket in
-        let socket = GCDAsyncUdpSocket(delegate: self, delegateQueue: DispatchQueue.main)
+      let socket = GCDAsyncUdpSocket(delegate: self, delegateQueue: .global(qos: .userInteractive))
         try! socket.enableBroadcast(true)
         
         return socket
