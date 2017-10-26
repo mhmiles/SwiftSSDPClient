@@ -20,20 +20,21 @@ class ViewController: UIViewController {
         client = SSDPClient(delegate: self)
         client.discoverRootDevices()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
+  func appendToTextView(_ text: String) {
+    DispatchQueue.main.async {
+      self.textView.text = (self.textView.text ?? "") + text
     }
+  }
 }
 
 extension ViewController: SSDPClientDelegate {
     func received(_ response: SSDPResponse) {
-        textView.text = (textView.text ?? "") + response.description
+        appendToTextView(response.description)
     }
     
     func received(_ request: SSDPRequest) {
-        textView.text = (textView.text ?? "") + request.description
+      appendToTextView(request.description)
     }
 }
 

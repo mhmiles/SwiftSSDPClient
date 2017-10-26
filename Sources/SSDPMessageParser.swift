@@ -35,7 +35,7 @@ class SSDPMessageParser {
                 if CharacterSet.newlines.contains(unicodeScalars[index]) {
                     valueBuffer = ""
                 } else {
-              valueBuffer = self.scanLine() as NSString?
+              valueBuffer = self.scanLine()
                 }
 
                 if let keyBuffer = keyBuffer as String?, let valueBuffer = valueBuffer {
@@ -45,11 +45,11 @@ class SSDPMessageParser {
         }
 
         if let method = SSDPRequestMethod(rawValue: firstWord) {
-            parseDictionary(scanner)
+            parseDictionary()
 
             return SSDPRequest(method: method, dictionary: messageDictionary)
         } else if firstWord == "HTTP/1.1" {
-            parseDictionary(scanner)
+            parseDictionary()
 
             return SSDPResponse(dictionary: messageDictionary)
         } else {
