@@ -9,71 +9,71 @@
 import Foundation
 
 class SSDPMessageParser {
-    fileprivate let scanner: Scanner
-
-    init(message: String) {
-        scanner = Scanner(string: message)
-        scanner.charactersToBeSkipped = CharacterSet.newlines
+  fileprivate let scanner: Scanner
+  
+  init(message: String) {
+    scanner = Scanner(string: message)
+    scanner.charactersToBeSkipped = CharacterSet.newlines
+  }
+  
+  func parse() -> SSDPMessage? {
+    guard let firstLine = scanLine(), let firstWord = firstLine.components(separatedBy: " ").first else {
+      return nil
     }
-
-    func parse() -> SSDPMessage? {
-        guard let firstLine = scanLine(), let firstWord = firstLine.components(separatedBy: " ").first else {
-            return nil
-        }
-
-        var keyBuffer: NSString? = nil
-        var valueBuffer: String? = nil
-
-        var messageDictionary = SSDPRequestDictionary()
-        let parseDictionary = {
-            while self.scanner.scanUpTo(":", into: &keyBuffer) {
-                self.advancePastColon()
-
-                let unicodeScalars = self.scanner.string.unicodeScalars
-                let index = unicodeScalars.index(unicodeScalars.startIndex, offsetBy: self.scanner.scanLocation)
-
-                if CharacterSet.newlines.contains(unicodeScalars[index]) {
-                    valueBuffer = ""
-                } else {
-              valueBuffer = self.scanLine()
-                }
-
-                if let keyBuffer = keyBuffer as String?, let valueBuffer = valueBuffer {
-                    messageDictionary[keyBuffer] = valueBuffer
-                }
-            }
-        }
-
-        if let method = SSDPRequestMethod(rawValue: firstWord) {
-            parseDictionary()
-
-            return SSDPRequest(method: method, dictionary: messageDictionary)
-        } else if firstWord == "HTTP/1.1" {
-            parseDictionary()
-
-            return SSDPResponse(dictionary: messageDictionary)
+    
+    var keyBuffer: NSString? = nil
+    var valueBuffer: String? = nil
+    
+    var messageDictionary = SSDPRequestDictionary()
+    let parseDictionary = {
+      while self.scanner.scanUpTo(":", into: &keyBuffer) {
+        self.advancePastColon()
+        
+        let unicodeScalars = self.scanner.string.unicodeScalars
+        let index = unicodeScalars.index(unicodeScalars.startIndex, offsetBy: self.scanner.scanLocation)
+        
+        if CharacterSet.newlines.contains(unicodeScalars[index]) {
+          valueBuffer = ""
         } else {
-            print("INVALID SSDP MESSAGE")
+          valueBuffer = self.scanLine()
         }
-
-        return nil
+        
+        if let keyBuffer = keyBuffer as String?, let valueBuffer = valueBuffer {
+          messageDictionary[keyBuffer] = valueBuffer
+        }
+      }
     }
-
-    fileprivate func scanLine() -> String? {
-        var buffer: NSString? = nil
-        scanner.scanUpToCharacters(from: CharacterSet.newlines, into: &buffer)
-
-        return (buffer as String?)
+    
+    if let method = SSDPRequestMethod(rawValue: firstWord) {
+      parseDictionary()
+      
+      return SSDPRequest(method: method, dictionary: messageDictionary)
+    } else if firstWord == "HTTP/1.1" {
+      parseDictionary()
+      
+      return SSDPResponse(dictionary: messageDictionary)
+    } else {
+      print("INVALID SSDP MESSAGE")
     }
-
-    fileprivate func advancePastColon() {
-        var string: NSString? = nil
-
-        let characterSet = CharacterSet(charactersIn: ": ")
-        scanner.scanCharacters(from: characterSet, into: &string)
-    }
+    
+    return nil
+  }
+  
+  fileprivate func scanLine() -> String? {
+    var buffer: NSString? = nil
+    scanner.scanUpToCharacters(from: CharacterSet.newlines, into: &buffer)
+    
+    return (buffer as String?)
+  }
+  
+  fileprivate func advancePastColon() {
+    var string: NSString? = nil
+    
+    let characterSet = CharacterSet(charactersIn: ": ")
+    scanner.scanCharacters(from: characterSet, into: &string)
+  }
 }
 
 public protocol SSDPMessage {
-    var searchTarget: String? { get }
+  var searchTarget: String? { get }
 }

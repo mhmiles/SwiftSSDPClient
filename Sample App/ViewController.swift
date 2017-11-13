@@ -10,16 +10,16 @@ import UIKit
 import SwiftSSDPClient
 
 class ViewController: UIViewController {
-    var client: SSDPClient!
+  var client: SSDPClient!
+  
+  @IBOutlet weak var textView: UITextView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    @IBOutlet weak var textView: UITextView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        client = SSDPClient(delegate: self)
-        client.discoverRootDevices()
-    }
+    client = SSDPClient(delegate: self)
+    client.discoverRootDevices()
+  }
   
   func appendToTextView(_ text: String) {
     DispatchQueue.main.async {
@@ -29,12 +29,12 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: SSDPClientDelegate {
-    func received(_ response: SSDPResponse) {
-        appendToTextView(response.description)
-    }
-    
-    func received(_ request: SSDPRequest) {
-      appendToTextView(request.description)
-    }
+  func received(_ response: SSDPResponse) {
+    appendToTextView(response.description)
+  }
+  
+  func received(_ request: SSDPRequest) {
+    appendToTextView(request.description)
+  }
 }
 
